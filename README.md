@@ -1,4 +1,7 @@
-# News Headline Topicker - From EDA to Production
+# News Headline Topicker: An end-to-end NLP text classification case study using deep learning, from EDA to production
+
+topicker: \ˈtä-pi-kər\\<br>
+A smart news headline topic picker
 
 ## Introduction
 
