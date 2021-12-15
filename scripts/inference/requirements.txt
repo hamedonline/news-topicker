@@ -1,0 +1,5 @@
+numpy
+torch===1.10.0+cpu
+transformers
+flask
+waitress
