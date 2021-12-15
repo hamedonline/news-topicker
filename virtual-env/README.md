@@ -35,10 +35,22 @@ torch==1.10.0+cu113
 ```
 
 Now that you have your ``requirements.txt`` file ready, open up a terminal (Linux) or command prompt (Windows) or Anaconda prompt (if you're using Anaconda or Miniconda).
-Navigate to this folder in your terminal and run the following command:
+Navigate to this folder in your terminal and run the following commands:
 
 ```shell
 pipenv install -r requirements.txt
+```
+
+__Warning:__ If you're on Windows, first you need to download pytorch wheel build directly from ``https://download.pytorch.org/whl/torch_stable.html``, depending on the python version installed:
+
+```shell
+pipenv install https://download.pytorch.org/whl/cpu/torch-1.10.0%2Bcpu-cp37-cp37m-win_amd64.whl
+```
+
+Then you can go ahead and continue with this:
+
+```shell
+pipenv install -r requirements-win.txt
 ```
 
 ### Method (B): Using ``Pipfile`` & ``Pipfile.lock`` Files
@@ -74,7 +86,7 @@ or
 python -m inference
 ```
 
-__Warning__: Don't forget to copy required scripts and model file(s) based on the use case to your virtual environment folder (these files are provided inside __``script``__ folder of this repository). In addition, you must update associated path & other variables in scripts accordingly.
+__Warning__: Don't forget to copy required scripts and model file(s) based on the use case to your virtual environment folder (these files are provided inside __``scripts``__ folder of this repository). In addition, you must update associated path & other variables in scripts accordingly.
 
 I've already provided ``requirements.txt``, ``Pipfile`` and ``Pipfile.lock`` files inside these folders and you can try either methods. Just as a side note, you can even try method (A) for this entire repo using ``requirements.txt`` file in repository's root.
 
