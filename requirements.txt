@@ -9,5 +9,6 @@ wordninja
 wordcloud
 torch==1.10.0+cu113
 transformers
+torch-lr-finder
 flask
 waitress
